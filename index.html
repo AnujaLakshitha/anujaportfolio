@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Anuja Lakshitha - Software Developer & UI/UX Designer specializing in web applications and desktop systems.">
   <title>Anuja Lakshitha | Developer & UI/UX Designer</title>
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="portfolio.css">
   
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -24,7 +30,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hamburger" id="hamburger">
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </div>
   </header>
@@ -35,7 +41,7 @@
       
       <!-- Text Content -->
       <div class="hero-content">
-        <span class="hero-badge">Available for Work</span>
+        <span class="hero-badge"><i class="fas fa-circle status-dot"></i> Available for Work</span>
         <h1>Anuja Lakshitha</h1>
         <p class="tagline">Software Developer & UI/UX Designer</p>
         <p class="hero-desc">
@@ -44,10 +50,14 @@
         <div class="hero-actions">
           <a href="#projects" class="btn primary-btn">View Work</a>
           <a href="#contact" class="btn outline-btn">Let's Talk</a>
+          <!-- CV Download Button -->
+          <a href="Anuja_Lakshitha_CV.pdf" download="Anuja_Lakshitha_CV.pdf" class="btn cv-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
         </div>
       </div>
 
-      <!-- Doubled Hero DP Card -->
+      <!-- Hero DP Card -->
       <div class="dp-card">
         <img src="Anuja.jpeg" alt="Anuja Lakshitha" class="dp-img">
       </div>
@@ -102,8 +112,8 @@
             <span>JS</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
           </div>
         </div>
       </div>
@@ -119,7 +129,7 @@
             <span>SQL</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fab fa-github"></i> Code</a>
           </div>
         </div>
       </div>
@@ -135,8 +145,8 @@
             <span>CSS3</span>
           </div>
           <div class="project-links">
-            <a href="#" class="project-btn"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fab fa-github"></i> Code</a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
           </div>
         </div>
       </div>
@@ -150,13 +160,16 @@
     <div class="contact-container">
       <form id="contact-form" class="contact-form">
         <div class="form-group">
-          <input type="text" id="name" placeholder="Your Name" required>
+          <label for="name" class="sr-only">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
-          <input type="email" id="email" placeholder="Your Email" required>
+          <label for="email" class="sr-only">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
         </div>
         <div class="form-group">
-          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <label for="message" class="sr-only">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
         </div>
         <button type="submit" class="btn primary-btn btn-block">Send Message</button>
         <p id="form-status" class="form-status"></p>
@@ -168,9 +181,9 @@
   <footer>
     <p>&copy; 2026 Anuja Lakshitha. All rights reserved.</p>
     <div class="social-links">
-      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
 
